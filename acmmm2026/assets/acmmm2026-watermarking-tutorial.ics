@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Foundations and Frontiers of Watermarking//ACM MM 2026 Tutorial//
+ EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:acmmm2026-watermarking-tutorial@vishal3477.github.io
+DTSTAMP:20261028T190000Z
+DTSTART:20261114T170000Z
+DTEND:20261114T210000Z
+SUMMARY:ACM MM 2026 Tutorial: Foundations and Frontiers of Watermarking
+LOCATION:Bora-Bora I\, Windsor Convention & Expo Center\, R. Martinho de Me
+ squita\, 129 - Barra da Tijuca\, Rio de Janeiro - RJ\, 22620-220\, Brazil
+DESCRIPTION:Tutorial 5 at ACM Multimedia 2026 (2:00-6:00 PM BRT). Schedule\
+ , speakers\, and materials: https://vishal3477.github.io/watermarking-tuto
+ rial/acmmm2026/
+URL:https://vishal3477.github.io/watermarking-tutorial/acmmm2026/
+END:VEVENT
+END:VCALENDAR

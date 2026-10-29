@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="CVPR 2026 Tutorial — Foundations and Frontiers of Watermarking: Algorithms, Multimodal Extensions, Benchmarks, and Authenticity Frameworks. Half-day, hybrid (in person + livestreamed), Denver, June 4, 2026.">
+<meta name="theme-color" content="#0b1b3a">
+<title>Foundations and Frontiers of Watermarking · CVPR 2026 Tutorial</title>
+
+<meta property="og:title" content="Foundations and Frontiers of Watermarking — CVPR 2026 Tutorial">
+<meta property="og:description" content="Algorithms · Multimodal Extensions · Benchmarks · Authenticity Frameworks. Half-day hybrid tutorial at CVPR 2026, Denver — in person and livestreamed for virtual attendees. June 4, 2026, 1:00–5:00 PM.">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Newsreader:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../editions.css">
+</head>
+
+<body>
+
+<a class="skip-link" href="#overview">Skip to content</a>
+
+<header class="site-nav" id="siteNav">
+    <div class="nav-inner">
+        <div class="nav-left">
+            <details class="edition-switcher">
+                <summary><span class="es-sr-only">Tutorial edition: </span>CVPR&nbsp;2026<svg class="edition-chevron" viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></summary>
+                <div class="edition-menu">
+                    <p class="edition-menu-label">Tutorial editions</p>
+                    <ul>
+                        <li><a href="../acmmm2026/"><span class="edition-name">ACM MM 2026</span><span class="edition-badge">Latest</span><span class="edition-meta">Rio de Janeiro · Nov 14, 2026</span></a></li>
+                        <li><a href="../cvpr2026/" aria-current="page"><span class="edition-name">CVPR 2026</span><span class="edition-meta">Denver · Jun 4, 2026</span></a></li>
+                    </ul>
+                </div>
+            </details>
+            <a class="nav-brand" href="#top">
+                <span class="brand-title">Watermarking Tutorial</span>
+            </a>
+        </div>
+
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav-links" id="navLinks" aria-label="Primary">
+            <a href="#overview">Overview</a>
+            <a href="#venue">Venue</a>
+            <a href="#schedule">Schedule</a>
+            <a href="#speakers">Speakers</a>
+            <a href="#papers">Reading List</a>
+            <a href="#materials">Materials</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="hero-inner">
+        <p class="eyebrow">CVPR 2026 · Half-Day Tutorial · Hybrid</p>
+        <h1>Foundations and Frontiers<br>of Watermarking</h1>
+        <p class="hero-sub">Algorithms · Multimodal Extensions · Benchmarks · Authenticity Frameworks</p>
+
+        <div class="hero-meta">
+            <span><strong>Date</strong> · Thursday, June 4, 2026</span>
+            <span><strong>Time</strong> · 1:00 PM – 5:00 PM</span>
+            <span><strong>Venue</strong> · CVPR 2026 · Denver, CO</span>
+            <span><strong>Room</strong> · Mile High 2B</span>
+            <span><strong>Format</strong> · Hybrid · In person + livestreamed</span>
+        </div>
+
+        <div class="hero-actions">
+            <a class="btn btn-primary" href="#schedule">View schedule</a>
+        </div>
+    </div>
+</section>
+
+<section class="logo-strip" aria-label="Affiliated institutions">
+    <div class="logo-strip-inner">
+        <img src="assets/adobe.png" alt="Adobe">
+        <img src="assets/meta.png" alt="Meta AI">
+        <img src="assets/siena.png" alt="University of Siena">
+        <img src="assets/umd.png" alt="University of Maryland">
+        <img src="assets/cvpr_logo.png" alt="CVPR 2026">
+    </div>
+</section>
+
+<main class="container">
+
+<!-- OVERVIEW -->
+<section id="overview" class="section">
+    <header class="section-header">
+        <h2>Overview</h2>
+    </header>
+
+    <div class="prose">
+        <p class="lede">
+            Invisible watermarking has re-emerged as a critical pillar of trustworthy AI and media authenticity
+            in the era of generative models. This tutorial provides a unified end-to-end treatment of watermarking,
+            spanning classical signal-processing theory, modern deep-learning methods, multimodal extensions
+            (image, video, audio, 3D), robustness benchmarking, and real-world deployment within industrial
+            provenance ecosystems.
+        </p>
+
+        <h3>What you will learn</h3>
+        <ul class="check-list">
+            <li>The classical foundations of watermarking — spread spectrum, quantization-based embedding, the imperceptibility / payload / robustness triangle, and security analysis.</li>
+            <li>Modern deep-learning watermarking: encoder–decoder architectures, adversarial training, and perceptual losses.</li>
+            <li>Multimodal extensions to audio, video, and 3D representations such as neural radiance fields and Gaussian splats.</li>
+            <li>Generative watermarking paradigms — model fine-tuning, noise-space methods, and sampler-level approaches.</li>
+            <li>Stress-testing watermark robustness under regeneration, compression, and adaptive attacks.</li>
+            <li>Deployment in real-world provenance ecosystems: provenance metadata, durable credentials, and cross-system interoperability across competing watermarking schemes.</li>
+        </ul>
+
+        <h3>Target audience</h3>
+        <p>
+            Researchers, graduate students, and practitioners in computer vision, multimedia security, and
+            trustworthy AI who want a coherent, technically deep introduction to watermarking and its modern
+            applications. Familiarity with deep learning fundamentals is assumed; no prior background in
+            watermarking is required.
+        </p>
+    </div>
+</section>
+
+<!-- VENUE -->
+<section id="venue" class="section section-alt">
+    <header class="section-header">
+        <h2>Venue &amp; Date</h2>
+    </header>
+
+    <div class="venue-grid">
+        <div class="venue-item">
+            <p class="venue-label">Conference</p>
+            <p class="venue-value">CVPR 2026</p>
+        </div>
+        <div class="venue-item">
+            <p class="venue-label">Date</p>
+            <p class="venue-value">Thursday, June 4, 2026</p>
+        </div>
+        <div class="venue-item">
+            <p class="venue-label">Time</p>
+            <p class="venue-value">1:00 PM – 5:00 PM</p>
+        </div>
+        <div class="venue-item">
+            <p class="venue-label">Location</p>
+            <p class="venue-value">Denver, Colorado, USA</p>
+        </div>
+        <div class="venue-item">
+            <p class="venue-label">Room</p>
+            <p class="venue-value">Mile High 2B</p>
+        </div>
+        <div class="venue-item">
+            <p class="venue-label">Format</p>
+            <p class="venue-value">Hybrid</p>
+        </div>
+    </div>
+
+    <p class="venue-note">
+        This is a hybrid tutorial. In addition to the in-person session in Denver, the tutorial will be
+        livestreamed for virtual attendees of CVPR 2026. Remote participants can follow the talks live
+        through the official CVPR virtual platform.
+    </p>
+</section>
+
+<!-- SCHEDULE -->
+<section id="schedule" class="section">
+    <header class="section-header">
+        <h2>Schedule</h2>
+        <p class="section-sub">All times local to Denver. Order and timing may shift slightly closer to the conference.</p>
+    </header>
+
+    <ol class="schedule">
+
+        <li class="schedule-row">
+            <div class="schedule-time">
+                <span class="time-range">1:00 – 1:05 PM</span>
+                <span class="time-len">5 min</span>
+            </div>
+            <div class="schedule-body">
+                <h3>Opening Remarks</h3>
+                <p class="schedule-speaker">Dr. Vishal Asnani · Adobe Research</p>
+                <p>Why watermarking matters now: the generative-AI authenticity problem, an outline of the afternoon, and how the sessions fit together.</p>
+            </div>
+        </li>
+
+        <li class="schedule-row">
+            <div class="schedule-time">
+                <span class="time-range">1:05 – 1:45 PM</span>
+                <span class="time-len">40 min · talk + Q&amp;A</span>
+            </div>
+            <div class="schedule-body">
+                <h3>Real-World Authenticity Systems</h3>
+                <p class="schedule-speaker">Dr. Shruti Agarwal · Adobe Research</p>
+                <p>
+                    Live demonstrations of deployed authenticity systems used by major technology platforms.
+                    The session traces verifiable provenance metadata from creation through inspection, shows
+                    how invisible watermarks persist across common internet transformations, and explores how
+                    multiple watermarking schemes from different providers can coexist and be discovered by
+                    independent verification platforms.
+                </p>
+            </div>
+        </li>
+
+        <li class="schedule-row">
+            <div class="schedule-time">
+                <span class="time-range">1:45 – 2:25 PM</span>
+                <span class="time-len">40 min · talk + Q&amp;A</span>
+            </div>
+            <div class="schedule-body">
+                <h3>Multimodal &amp; Generative Watermarking</h3>
+                <p class="schedule-speaker">Dr. Pierre Fernandez · Meta FAIR</p>
+                <p>
+                    Modern deep-learning watermarking organized around three axes: post-hoc encoder–decoder
+                    methods for images, their extension to other modalities (audio, video, and 3D), and the
+                    emerging paradigm of generative watermarking — including model-level fine-tuning,
+                    noise-space manipulation, and sampler-level techniques that embed the watermark during the
+                    generation process itself.
+                </p>
+            </div>
+        </li>
+
+        <li class="schedule-break">
+            <span>2:25 – 2:40 PM · Short break</span>
+        </li>
+
+        <li class="schedule-row">
+            <div class="schedule-time">
+                <span class="time-range">2:40 – 3:20 PM</span>
+                <span class="time-len">40 min · talk + Q&amp;A</span>
+            </div>
+            <div class="schedule-body">
+                <h3>Classical Watermarking Foundations: Lessons from the Past</h3>
+                <p class="schedule-speaker">Prof. Benedetta Tondi · University of Siena</p>
+                <p>
+                    A structured journey through classical watermarking foundations: spread spectrum,
+                    quantization-based informed watermarking, the imperceptibility / payload / robustness
+                    trade-off triangle, and the rich line of work on watermark security through sensitivity
+                    and collusion attacks. We then revisit these classical principles in the modern context
+                    of post-hoc watermarking for generative AI imagery.
+                </p>
+            </div>
+        </li>
+
+        <li class="schedule-break">
+            <span>3:20 – 3:30 PM · Coffee break</span>
+        </li>
+
+        <li class="schedule-row">
+            <div class="schedule-time">
+                <span class="time-range">3:30 – 4:10 PM</span>
+                <span class="time-len">40 min · talk + Q&amp;A</span>
+            </div>
+            <div class="schedule-body">
+                <h3>Benchmarking &amp; Robustness Evaluation</h3>
+                <p class="schedule-speaker">Prof. Furong Huang · University of Maryland</p>
+                <p>
+                    A principled framework for evaluating watermark robustness. We discuss attack taxonomies
+                    (distortion, regeneration, adversarial), evaluation criteria (BER, AUC, fidelity), and
+                    standardized stress-test benchmarks — with hands-on insights into reproducing fair
+                    comparisons across competing schemes.
+                </p>
+            </div>
+        </li>
+
+        <li class="schedule-row">
+            <div class="schedule-time">
+                <span class="time-range">4:10 – 4:50 PM</span>
+                <span class="time-len">40 min · talk + Q&amp;A</span>
+            </div>
+            <div class="schedule-body">
+                <h3>Proactive Schemes as a Unifying Lens for Downstream Watermarking Applications</h3>
+                <p class="schedule-speaker">Dr. Vishal Asnani · Adobe Research</p>
+                <p>
+                    Proactive schemes as a unifying framework for embedding constructive, verifiable signals
+                    into media and ML systems. We present a taxonomy spanning data perturbation, template
+                    learning, and applications across vision models, LLMs, diffusion, privacy systems, and 3D
+                    — clarifying threat models and open challenges in robust, responsible watermarking.
+                </p>
+            </div>
+        </li>
+
+        <li class="schedule-row">
+            <div class="schedule-time">
+                <span class="time-range">4:50 – 5:00 PM</span>
+                <span class="time-len">10 min</span>
+            </div>
+            <div class="schedule-body">
+                <h3>Closing Remarks &amp; Open Q&amp;A</h3>
+                <p class="schedule-speaker">All organizers</p>
+                <p>Synthesis of the afternoon, audience questions across sessions, and pointers for further reading and benchmarks.</p>
+            </div>
+        </li>
+
+    </ol>
+</section>
+
+<!-- SPEAKERS -->
+<section id="speakers" class="section section-alt">
+    <header class="section-header">
+        <h2>Speakers</h2>
+        <p class="section-sub">A multi-institution team spanning industry research labs and academia.</p>
+    </header>
+
+    <div class="speakers">
+
+        <article class="speaker-card">
+            <img src="assets/vishal.jpg" alt="Dr. Vishal Asnani">
+            <h3>Dr. Vishal Asnani</h3>
+            <p class="affiliation">Research Scientist · Adobe Research</p>
+            <p class="bio">
+                Vishal is a Research Scientist at Adobe Research in the Cross-modal Representation Learning
+                (XRL) team in San Jose, working on Content Authenticity and Responsible AI — including
+                watermarking and durable content credentials for video. He earned his PhD at Michigan State
+                University, advised by Prof. Xiaoming Liu.
+            </p>
+            <ul class="speaker-links">
+                <li><a href="https://vishal3477.github.io/" target="_blank" rel="noopener">Homepage</a></li>
+                <li><a href="https://scholar.google.com/citations?user=OA4lkcwAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a></li>
+                <li><a href="https://www.linkedin.com/in/vishal-asnani" target="_blank" rel="noopener">LinkedIn</a></li>
+            </ul>
+        </article>
+
+        <article class="speaker-card">
+            <img src="assets/shruti.jpg" alt="Dr. Shruti Agarwal">
+            <h3>Dr. Shruti Agarwal</h3>
+            <p class="affiliation">Research Scientist · Adobe Research</p>
+            <p class="bio">
+                Shruti is a Research Scientist on the AI for Content Authenticity team at Adobe. Her work
+                centers on content provenance and multimedia forensics — spanning watermarking, deepfake
+                detection, and robust image fingerprinting. She was previously a postdoc at MIT CSAIL with
+                Prof. Bill Freeman and earned her PhD at UC Berkeley with Prof. Hany Farid.
+            </p>
+            <ul class="speaker-links">
+                <li><a href="https://agarwalshruti15.github.io/" target="_blank" rel="noopener">Homepage</a></li>
+                <li><a href="https://scholar.google.com/citations?user=gcuoIb0AAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a></li>
+                <li><a href="https://www.linkedin.com/in/shruti-agarwal-54763870/" target="_blank" rel="noopener">LinkedIn</a></li>
+            </ul>
+        </article>
+
+        <article class="speaker-card">
+            <img src="assets/pierre.jpg" alt="Dr. Pierre Fernandez">
+            <h3>Dr. Pierre Fernandez</h3>
+            <p class="affiliation">Research Scientist · Meta FAIR (Paris)</p>
+            <p class="bio">
+                Pierre is a Research Scientist at Meta FAIR Paris. His research focuses on content
+                protection, safety, and watermarking for generative models — making AI-generated content
+                traceable and identifiable. He completed his PhD at FAIR / Inria Rennes with Matthijs Douze,
+                Hervé Jégou, and Teddy Furon.
+            </p>
+            <ul class="speaker-links">
+                <li><a href="https://pierrefdz.github.io/" target="_blank" rel="noopener">Homepage</a></li>
+                <li><a href="https://scholar.google.com/citations?user=osCX1YQAAAAJ&amp;hl=fr" target="_blank" rel="noopener">Scholar</a></li>
+                <li><a href="https://www.linkedin.com/in/pierrefdz/?locale=en" target="_blank" rel="noopener">LinkedIn</a></li>
+            </ul>
+        </article>
+
+        <article class="speaker-card">
+            <img src="assets/tondi.jpg" alt="Prof. Benedetta Tondi">
+            <h3>Prof. Benedetta Tondi</h3>
+            <p class="affiliation">Assistant Professor · University of Siena</p>
+            <p class="bio">
+                Benedetta is an Assistant Professor at the Department of Information Engineering and
+                Mathematics, University of Siena, and a member of the VIPP Group led by Prof. Mauro Barni.
+                Her research applies information-theoretic and game-theoretic methods to multimedia
+                forensics, watermarking security, and adversarial signal processing for ML.
+            </p>
+            <ul class="speaker-links">
+                <li><a href="https://clem.dii.unisi.it/~vipp/btondi.html" target="_blank" rel="noopener">Homepage</a></li>
+                <li><a href="https://scholar.google.com/citations?user=xpNEfq4AAAAJ&amp;hl=it" target="_blank" rel="noopener">Scholar</a></li>
+                <li><a href="https://www.linkedin.com/in/benedetta-tondi-61215652/" target="_blank" rel="noopener">LinkedIn</a></li>
+            </ul>
+        </article>
+
+        <article class="speaker-card">
+            <img src="assets/furong.jpg" alt="Prof. Furong Huang">
+            <h3>Prof. Furong Huang</h3>
+            <p class="affiliation">Associate Professor · University of Maryland</p>
+            <p class="bio">
+                Furong is an Associate Professor in the Department of Computer Science at the University of
+                Maryland, affiliated with UMIACS, the Maryland Robotics Center, AMSC, and ECE. Her research
+                bridges trustworthy machine learning, sequential decision-making, and generative AI, with
+                contributions to systematic stress-testing of watermark robustness.
+            </p>
+            <ul class="speaker-links">
+                <li><a href="https://furong-huang.com/" target="_blank" rel="noopener">Homepage</a></li>
+                <li><a href="https://scholar.google.com/citations?user=13yyuCcAAAAJ&amp;hl=en" target="_blank" rel="noopener">Scholar</a></li>
+                <li><a href="https://www.linkedin.com/in/furong-huang/" target="_blank" rel="noopener">LinkedIn</a></li>
+            </ul>
+        </article>
+
+    </div>
+</section>
+
+<!-- READING LIST -->
+<section id="papers" class="section">
+    <header class="section-header">
+        <h2>Reading List</h2>
+        <p class="section-sub">A curated set of papers covered or referenced in the tutorial, grouped by session.</p>
+    </header>
+
+    <div class="papers">
+
+        <div class="papers-group">
+            <h3>Classical Watermarking Foundations</h3>
+            <ul class="paper-list">
+                <li>Cox, Kilian, Leighton, Shamoon. <em>Secure spread spectrum watermarking for multimedia.</em> IEEE TIP, 1997.</li>
+                <li>Cox, Miller, McKellips. <em>Watermarking as communications with side information.</em> Proc. IEEE, 1999.</li>
+                <li>Chen &amp; Wornell. <em>Quantization index modulation: A class of provably good methods for digital watermarking and information embedding.</em> IEEE TIT, 2001.</li>
+                <li>Cayre, Fontaine, Furon. <em>Watermarking security: Theory and practice.</em> IEEE TSP, 2005.</li>
+                <li>Comesaña, Pérez-Freire, Pérez-González. <em>Fundamentals of data hiding security and their application to spread-spectrum analysis.</em> IH, 2005.</li>
+                <li>Tondi, Costanzo, Barni. <em>Of-SemWat: High-payload text embedding for semantic watermarking of AI-generated images.</em> ICASSP, 2026.</li>
+            </ul>
+        </div>
+
+        <div class="papers-group">
+            <h3>Multimodal &amp; Generative Watermarking</h3>
+            <ul class="paper-list">
+                <li>Zhu, Kaplan, Johnson, Fei-Fei. <em>HiDDeN: Hiding Data With Deep Networks.</em> ECCV, 2018.</li>
+                <li>Tancik, Mildenhall, Ng. <em>StegaStamp: Invisible Hyperlinks in Physical Photographs.</em> CVPR, 2020.</li>
+                <li>Bui, Agarwal, Collomosse. <em>TrustMark: Robust Watermarking and Watermark Removal for Arbitrary Resolution Images.</em> ICCV, 2025.</li>
+                <li>Souček et al. <em>Pixel Seal: Adversarial-only Training for Invisible Image and Video Watermarking.</em> arXiv:2512.16874, 2025.</li>
+                <li>San Roman, Fernandez, Furon, Défossez, Tran, Elsahar. <em>Proactive Detection of Voice Cloning with Localized Watermarking.</em> ICML, 2024.</li>
+                <li>Fernandez, Elsahar, Yalniz, Mourachko. <em>Video Seal: Open and Efficient Video Watermarking.</em> arXiv:2412.09492, 2024.</li>
+                <li>Luo, Guo, Cheung, See, Wan. <em>CopyRNeRF: Protecting the Copyright of Neural Radiance Fields.</em> ICCV, 2023.</li>
+                <li>Fernandez, Couairon, Jégou, Douze, Furon. <em>The Stable Signature: Rooting Watermarks in Latent Diffusion Models.</em> ICCV, 2023.</li>
+                <li>Wen, Kirchenbauer, Geiping, Goldstein. <em>Tree-Ring Watermarks.</em> NeurIPS, 2023.</li>
+                <li>Yang, Zeng, Chen, Fang, Zhang, Yu. <em>Gaussian Shading: Provable Performance-Lossless Image Watermarking for Diffusion Models.</em> CVPR, 2024.</li>
+                <li>Jovanović, Labiad, Souček, Vechev, Fernandez. <em>Watermarking Autoregressive Image Generation.</em> NeurIPS, 2025.</li>
+            </ul>
+        </div>
+
+        <div class="papers-group">
+            <h3>Benchmarking &amp; Robustness</h3>
+            <ul class="paper-list">
+                <li>An et al. <em>WAVES: Benchmarking the Robustness of Image Watermarks.</em> ICML, 2024.</li>
+                <li>Tondi, Guo, Pancino, Barni. <em>JMA: A General Algorithm to Craft Nearly Optimal Targeted Adversarial Examples.</em> IEEE TIFS, 2025.</li>
+                <li>Jia, Fang, Zhang. <em>MBRS: Enhancing robustness of DNN-based watermarking by mini-batch of real and simulated JPEG compression.</em> ACM MM, 2021.</li>
+                <li>Ma, Guo, Hou, Yang, Li, Jia, Xie. <em>Towards blind watermarking: Combining invertible and non-invertible mechanisms.</em> ACM MM, 2022.</li>
+            </ul>
+        </div>
+
+        <div class="papers-group">
+            <h3>Attribution &amp; Proactive Schemes</h3>
+            <ul class="paper-list">
+                <li>Asnani, Yin, Liu. <em>Proactive Schemes: A Survey of Adversarial Attacks for Social Good.</em> IJCV, 2026.</li>
+                <li>Asnani et al. <em>ProMark: Proactive Diffusion Watermarking for Causal Attribution.</em> CVPR, 2024.</li>
+                <li>Darvish Rouhani, Chen, Koushanfar. <em>DeepSigns: An end-to-end watermarking framework for ownership protection of DNNs.</em> ASPLOS, 2019.</li>
+                <li>Li, Zhu, Yang, Jiang, Wei, Xia. <em>Black-box dataset ownership verification via backdoor watermarking.</em> IEEE TIFS, 2023.</li>
+                <li>Huang et al. <em>CMUA-Watermark: A cross-model universal adversarial watermark for combating deepfakes.</em> AAAI, 2022.</li>
+                <li>Kirchenbauer, Geiping, Wen, Katz, Miers, Goldstein. <em>A Watermark for Large Language Models.</em> ICML, 2023.</li>
+                <li>Sablayrolles, Douze, Schmid, Jégou. <em>Radioactive Data: Tracing Through Training.</em> ICML, 2020.</li>
+                <li>Yoo, Chang, Luo, Stava, Liu, Milanfar, Yang. <em>Deep 3D-to-2D Watermarking.</em> CVPR, 2022.</li>
+                <li>Shan, Wenger, Zhang, Li, Zheng, Zhao. <em>Fawkes: Protecting privacy against unauthorized deep learning models.</em> USENIX Security, 2020.</li>
+            </ul>
+        </div>
+
+        <div class="papers-group">
+            <h3>Real-World Authenticity &amp; Provenance</h3>
+            <ul class="paper-list">
+                <li>Petrov, Agarwal, Torr, Bibi, Collomosse. <em>On the coexistence and ensembling of watermarks.</em> arXiv:2501.17356, 2025.</li>
+                <li>Collomosse &amp; Parsons. <em>To Authenticity, and Beyond! Building safe and fair generative AI upon the three pillars of provenance.</em> IEEE CG&amp;A, 2024.</li>
+                <li>Gowal et al. <em>SynthID-Image: Image watermarking at internet scale.</em> arXiv:2510.09263, 2025.</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- MATERIALS -->
+<section id="materials" class="section section-alt">
+    <header class="section-header">
+        <h2>Materials</h2>
+        <p class="section-sub">Slides, code, and recordings will be posted here as they become available.</p>
+    </header>
+
+    <h3 class="materials-subhead">Talk slides</h3>
+    <ul class="slide-list">
+
+        <li class="slide-item">
+            <div class="slide-meta">
+                <p class="slide-talk">Opening Remarks</p>
+                <p class="slide-speaker">Dr. Vishal Asnani · Adobe Research</p>
+            </div>
+            <a class="slide-link" href="https://docs.google.com/presentation/d/1HUsIsBmXRRbFO845izbYQOVauWE2JS5q/edit?usp=sharing" target="_blank" rel="noopener">View slides</a>
+        </li>
+
+        <li class="slide-item">
+            <div class="slide-meta">
+                <p class="slide-talk">Real-World Authenticity Systems</p>
+                <p class="slide-speaker">Dr. Shruti Agarwal · Adobe Research</p>
+            </div>
+            <a class="slide-link" href="https://drive.google.com/file/d/1vDEC2Qa-P5PMH0KjR4hRNtsuHFm0vTmY/view?usp=sharing" target="_blank" rel="noopener">View slides</a>
+        </li>
+
+        <li class="slide-item">
+            <div class="slide-meta">
+                <p class="slide-talk">Multimodal &amp; Generative Watermarking</p>
+                <p class="slide-speaker">Dr. Pierre Fernandez · Meta FAIR</p>
+            </div>
+            <a class="slide-link" href="https://docs.google.com/presentation/d/1jcvhzB5IuLU0Ghs6zmNm884AvSUxTqxw/edit?usp=sharing" target="_blank" rel="noopener">View slides</a>
+        </li>
+
+        <li class="slide-item">
+            <div class="slide-meta">
+                <p class="slide-talk">Classical Watermarking Foundations</p>
+                <p class="slide-speaker">Prof. Benedetta Tondi · University of Siena</p>
+            </div>
+            <a class="slide-link" href="https://drive.google.com/file/d/1k3mg0tAl2qcCXeIPtX2hdCYA7c7Xu2sA/view?usp=sharing" target="_blank" rel="noopener">View slides</a>
+        </li>
+
+        <li class="slide-item">
+            <div class="slide-meta">
+                <p class="slide-talk">Benchmarking &amp; Robustness Evaluation</p>
+                <p class="slide-speaker">Prof. Furong Huang · University of Maryland</p>
+            </div>
+            <a class="slide-link" href="https://docs.google.com/presentation/d/17rSJZbS1l4nMoMB-78RLA2Mw_Yd6YzzH/edit?usp=sharing" target="_blank" rel="noopener">View slides</a>
+        </li>
+
+        <li class="slide-item">
+            <div class="slide-meta">
+                <p class="slide-talk">Proactive Schemes as a Unifying Lens</p>
+                <p class="slide-speaker">Dr. Vishal Asnani · Adobe Research</p>
+            </div>
+            <a class="slide-link" href="https://docs.google.com/presentation/d/1QQIroe1MQUn-RMOheQE14LucTjyV3T48/edit?usp=sharing" target="_blank" rel="noopener">View slides</a>
+        </li>
+
+    </ul>
+
+    <h3 class="materials-subhead">More resources</h3>
+    <div class="materials-grid">
+        <a class="material-card" href="#" aria-disabled="true">
+            <p class="material-tag">Code</p>
+            <h3>GitHub repository</h3>
+            <p>Reference implementations and notebook demos for selected approaches.</p>
+            <span class="material-status">Coming soon</span>
+        </a>
+
+        <a class="material-card" href="#" aria-disabled="true">
+            <p class="material-tag">Video</p>
+            <h3>Recording</h3>
+            <p>Tutorial recording will be linked here after the event.</p>
+            <span class="material-status">Post-event</span>
+        </a>
+
+        <a class="material-card" href="#" aria-disabled="true">
+            <p class="material-tag">Benchmarks</p>
+            <h3>Benchmarks &amp; reading list</h3>
+            <p>Benchmark links, datasets, and a curated extended reading list.</p>
+            <span class="material-status">Coming soon</span>
+        </a>
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+    <header class="section-header">
+        <h2>Get in touch</h2>
+        <p class="section-sub">Questions about the tutorial, accessibility requests, or collaboration ideas — we're happy to hear from you.</p>
+    </header>
+
+    <div class="contact-card">
+        <p>Primary contact: <a href="mailto:vasnani@adobe.com">vasnani@adobe.com</a></p>
+        <p>For updates as the event approaches, watch this page or the CVPR 2026 program listing.</p>
+    </div>
+</section>
+
+</main>
+
+<footer class="footer">
+    <div class="footer-inner">
+        <p>&copy; <span id="footerYear">2026</span> · CVPR 2026 Tutorial on Watermarking</p>
+        <p class="footer-sub">Foundations and Frontiers of Watermarking · Half-Day · Hybrid</p>
+    </div>
+</footer>
+
+<script src="script.js" defer></script>
+<script src="../editions.js" defer></script>
+</body>
+</html>
