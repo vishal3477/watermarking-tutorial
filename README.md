@@ -62,8 +62,9 @@ Most copy lives in each edition's `index.html`:
   slides are linked from the Materials section.
 
 ACM MM 2026 content sources: date, time, and room from the official programme
-(<https://2026.acmmm.org/site/programme.html>); talk order and durations from the submitted MM ’26 proposal,
-with its two 10-minute breaks replaced by the conference coffee break (3:30 – 4:00 PM).
+(<https://2026.acmmm.org/site/programme.html>); talk order and durations from the submitted MM ’26 proposal.
+The organizers later lengthened both panels to 30 minutes and replaced the two 10-minute breaks with a
+single 10-minute break; closing remarks are folded into Panel II so the session ends at 6:00 PM.
 
 ## Tutorial topics
 
