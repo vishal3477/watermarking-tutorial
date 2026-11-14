@@ -806,6 +806,22 @@ a.slide-link:hover {
     border-color: var(--accent-soft);
     color: #fff;
 }
+.slide-actions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 8px;
+    flex-shrink: 0;
+}
+a.slide-link.is-secondary {
+    background: transparent;
+    color: var(--accent);
+}
+a.slide-link.is-secondary:hover {
+    background: var(--accent-bg);
+    color: var(--accent);
+    border-color: var(--accent);
+}
 
 /* -----  CONTACT  ----- */
 
@@ -892,6 +908,7 @@ a.slide-link:hover {
     .venue-item:nth-child(n) { border-right: none; border-bottom: 1px solid var(--rule); }
     .venue-item:last-child { border-bottom: none; }
     .slide-item { flex-direction: column; align-items: flex-start; gap: 8px; }
+    .slide-actions { justify-content: flex-start; }
     .papers-group summary { flex-wrap: wrap; }
     .paper-count { margin-left: 0; width: 100%; order: 3; }
     .papers-group summary::after { order: 2; margin-left: auto; }

@@ -56,10 +56,10 @@ Most copy lives in each edition's `index.html`:
 - **Schedule:** `<ol class="schedule">` items. In `acmmm2026/`, keep the `<time datetime>` values in sync.
 - **Speakers:** `<article class="speaker-card">` blocks.
 - **Reading list:** `<ul class="paper-list">` entries, grouped by session.
-- **Slides / materials:** in `acmmm2026/`, swap each `<span class="status-pill">` in the “Talk slides” list
-  for `<a class="slide-link" href="…" target="_blank" rel="noopener">View slides</a>`; once DOI
-  `10.1145/3767308.3836606` resolves, turn the “Tutorial summary” card into a link to it. In `cvpr2026/`,
-  slides are linked from the Materials section.
+- **Slides / materials:** ACM MM 2026 slides are PDFs in `acmmm2026/slides/` (`talkN-<surname>.pdf`,
+  exported from the speakers' decks without speaker notes); Talk 1's demo video is
+  `acmmm2026/media/synthid-verify-demo.mp4`. Once DOI `10.1145/3767308.3836606` resolves, turn the
+  “Tutorial summary” card into a link to it. In `cvpr2026/`, slides are linked from the Materials section.
 
 ACM MM 2026 content sources: date, time, and room from the official programme
 (<https://2026.acmmm.org/site/programme.html>); talk order and durations from the submitted MM ’26 proposal.
