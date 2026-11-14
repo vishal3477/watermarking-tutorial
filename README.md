@@ -65,6 +65,9 @@ ACM MM 2026 content sources: date, time, and room from the official programme
 (<https://2026.acmmm.org/site/programme.html>); talk order and durations from the submitted MM ’26 proposal.
 The organizers later lengthened both panels to 30 minutes and replaced the two 10-minute breaks with a
 single 10-minute break; closing remarks are folded into Panel II so the session ends at 6:00 PM.
+On the day (Nov 14), Prof. Barni could not join Panel II, so Talk 3's Q&A was extended to 10 minutes
+(3:55–4:30 PM), Talks 4 and 5 moved 5 minutes later, and Panel II was shortened to 25 minutes (5:35–6:00 PM).
+The Zoom link for online participation is in the hero, the Venue section, and the calendar file.
 
 ## Tutorial topics
 
